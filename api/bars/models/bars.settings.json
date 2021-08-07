@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "bars",
+  "info": {
+    "name": "Bars",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "composition": {
+      "type": "text"
+    },
+    "description": {
+      "type": "text"
+    },
+    "price": {
+      "type": "integer"
+    },
+    "numberIncluded": {
+      "type": "integer"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}

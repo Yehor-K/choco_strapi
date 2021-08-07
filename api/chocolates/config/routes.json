@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/chocolates",
+      "handler": "chocolates.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/chocolates/count",
+      "handler": "chocolates.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/chocolates/:id",
+      "handler": "chocolates.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/chocolates",
+      "handler": "chocolates.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/chocolates/:id",
+      "handler": "chocolates.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/chocolates/:id",
+      "handler": "chocolates.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -2,48 +2,48 @@
   "routes": [
     {
       "method": "GET",
-      "path": "/products",
-      "handler": "products.find",
+      "path": "/mini-chocolates",
+      "handler": "mini-chocolates.find",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/products/count",
-      "handler": "products.count",
+      "path": "/mini-chocolates/count",
+      "handler": "mini-chocolates.count",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/products/:id",
-      "handler": "products.findOne",
+      "path": "/mini-chocolates/:id",
+      "handler": "mini-chocolates.findOne",
       "config": {
         "policies": []
       }
     },
     {
       "method": "POST",
-      "path": "/products",
-      "handler": "products.create",
+      "path": "/mini-chocolates",
+      "handler": "mini-chocolates.create",
       "config": {
         "policies": []
       }
     },
     {
       "method": "PUT",
-      "path": "/products/:id",
-      "handler": "products.update",
+      "path": "/mini-chocolates/:id",
+      "handler": "mini-chocolates.update",
       "config": {
         "policies": []
       }
     },
     {
       "method": "DELETE",
-      "path": "/products/:id",
-      "handler": "products.delete",
+      "path": "/mini-chocolates/:id",
+      "handler": "mini-chocolates.delete",
       "config": {
         "policies": []
       }

@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "products",
+  "collectionName": "candies",
   "info": {
-    "name": "products",
+    "name": "Candies",
     "description": ""
   },
   "options": {
@@ -18,17 +18,24 @@
     "composition": {
       "type": "text"
     },
-    "type": {
-      "type": "enumeration",
-      "enum": [
-        "chocolate",
-        "chocolate_mini",
-        "bar",
-        "candy"
-      ]
-    },
     "description": {
       "type": "text"
+    },
+    "price": {
+      "type": "integer"
+    },
+    "numberIncluded": {
+      "type": "integer"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
     }
   }
 }

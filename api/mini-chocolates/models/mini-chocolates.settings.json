@@ -1,0 +1,49 @@
+{
+  "kind": "collectionType",
+  "collectionName": "mini_chocolates",
+  "info": {
+    "name": "Mini-chocolates"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "composition": {
+      "type": "text"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "black",
+        "milk",
+        "buckwheat",
+        "blackWithCaramelFilling"
+      ]
+    },
+    "description": {
+      "type": "text"
+    },
+    "price": {
+      "type": "integer"
+    },
+    "numberIncluded": {
+      "type": "integer"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}
