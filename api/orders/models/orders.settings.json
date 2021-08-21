@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "orders",
+  "info": {
+    "name": "Orders",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "phoneNumber": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "City": {
+      "type": "string"
+    },
+    "novaPoshta": {
+      "type": "string"
+    },
+    "notes": {
+      "type": "text"
+    },
+    "order": {
+      "type": "text"
+    },
+    "amountToPay": {
+      "type": "string"
+    }
+  }
+}
